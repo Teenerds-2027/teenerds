@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-items: center;
+    min-height: 100vh;
+    margin: 0 auto;
+    font-family: 'Edu SA Beginner', cursive;
+    letter-spacing: 0.1rem;
+}
+
+.don {
+    background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+}
+
+.header h1 {
+    animation: header 2.5s ease-in infinite;
+}
+
+.don h2 {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 3rem;
+    padding-top: 1.5rem;
+    text-shadow: 2px 2px 2px #CE5937;
+}
+
+.header {
+    background-image: linear-gradient(to right top, #46638f, #3b5e94, #305999, #24549e, #174ea2);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 45px;
+    flex-wrap: wrap;
+}
+
+.nav a {
+    /*Descendant selector, select all the 'a' tags nested inside the nav class*/
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease-out;
+}
+
+.insLink:hover {
+    opacity: 0.6;
+}
+
+.nav a:hover {
+    color: #c5cae9;
+    transform: rotate(6deg);
+}
+
+.nav li {
+    margin-left: 20px;
+}
+
+.nav {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.sarvesh {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+    transition: 0.3s;
+    background: rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+    padding-top: 3rem;
+}
+
+.vikash {
+    background: rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+    transition: 0.3s;
+    margin: 0 auto;
+    padding-top: 3rem;
+}
+
+.vikash:hover, .sarvesh:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.8);
+}
+
+.heading { 
+    margin: 0 auto;
+}
+
+.contacts {
+    list-style: none;
+}
+
+.contacts a{
+    text-decoration: none;
+}
+
+.text li {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.logo {
+    padding-left: 5.5rem;
+}
+
+@keyframes header {
+    0% {
+        color: #DAD4C4;
+        transform: translateY(0.2rem);
+    }
+
+    40% {
+        transform: translateY(-0.2rem);
+    }
+}
